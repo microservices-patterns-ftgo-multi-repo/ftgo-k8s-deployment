@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: ftgo-consumer-service
-        image: msapatternsmultirepo/ftgo-consumer-service:latest
+        image: msapatternsmultirepo/ftgo-consumer-service:0.2
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
