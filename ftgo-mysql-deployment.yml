@@ -27,7 +27,7 @@ spec:
       terminationGracePeriodSeconds: 10
       containers:
         - name: ftgo-mysql
-          image: msapatterns/mysql:latest
+          image: eventuateio/eventuate-tram-sagas-mysql:0.10.0.M3
           imagePullPolicy: Always
           args:
               - "--ignore-db-dir=lost+found"
@@ -43,6 +43,12 @@ spec:
           volumeMounts:
             - name: ftgo-mysql-persistent-storage
               mountPath: /var/lib/mysql
+            - name: ftgo-mysql-config-volume
+              mountPath: /docker-entrypoint-initdb.d
+      volumes:
+      - name: ftgo-mysql-config-volume
+        configMap:
+          name: ftgo-mysql-config
   volumeClaimTemplates:
   - metadata:
       name: ftgo-mysql-persistent-storage
