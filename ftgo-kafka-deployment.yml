@@ -17,6 +17,8 @@ metadata:
   name: ftgo-kafka
 spec:
   serviceName: "kafka"
+  updateStrategy:
+    type: RollingUpdate
   replicas: 1
   template:
     metadata:
