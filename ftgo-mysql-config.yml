@@ -136,6 +136,3 @@ data:
         client_name VARCHAR(255) NOT NULL PRIMARY KEY,
         serialized_offset VARCHAR(255)
       );
-
-
----

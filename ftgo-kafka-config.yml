@@ -126,4 +126,3 @@ data:
     # for development
 
     offsets.topic.replication.factor=1
----
