@@ -5,6 +5,8 @@ metadata:
   name: ftgo-consumer-service
   labels:
     application: ftgo
+  annotations:
+    flux.weave.works/automated: 'true'
 spec:
   replicas: 1
   selector:
