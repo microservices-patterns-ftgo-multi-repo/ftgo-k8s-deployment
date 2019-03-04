@@ -1,0 +1,1 @@
+{"jobID":"0c8518c8-e58d-a405-9cef-6dc6dad5f4cb","spec":{"type":"policy","cause":{"Message":"","User":"Chris Richardson \u003cchris@chrisrichardson.net\u003e"},"spec":{"default:deployment/ftgo-consumer-service":{"add":{"automated":"true"},"remove":{}}}},"result":null}
