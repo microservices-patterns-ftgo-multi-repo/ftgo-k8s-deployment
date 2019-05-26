@@ -60,18 +60,16 @@ spec:
             value: com.mysql.jdbc.Driver
           - name: EVENTUATE_CDC_READER_READER1_LEADERSHIPLOCKPATH
             value: /eventuate/cdc/leader/eventuatelocal
-          - name: EVENTUATE_CDC_READER_READER1_BINLOGCLIENTID
-            value: "1"
           - name: EVENTUATE_CDC_READER_READER1_CDCDBUSERNAME
             value: root
           - name: EVENTUATE_CDC_READER_READER1_CDCDBPASSWORD
             value: rootpassword
           - name: EVENTUATE_CDC_READER_READER1_READOLDDEBEZIUMDBOFFSETSTORAGETOPIC
             value: "false"
-          - name: EVENTUATE_CDC_READER_READER1_MYSQLBINLOGCLIENTNAME
-            value: ClientEventuateLocal
           - name: EVENTUATE_CDC_READER_READER1_OFFSETSTORAGETOPICNAME
             value: db.history.eventuate.local
+          - name: EVENTUATE_CDC_READER_READER1_MYSQLBINLOGCLIENTUNIQUEID
+            value: "1"
         livenessProbe:
           httpGet:
             path: /actuator/health
